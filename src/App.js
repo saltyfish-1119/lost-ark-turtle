@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./App.module.scss";
+import bossImage from "./boss.jpg";
 
 const initRotations = [45, 90, 135, 180, 225, 270, 315];
 const ROTATIONS_ANGELS = [90, 180, 270];
@@ -40,6 +41,7 @@ const App = () => {
         Reset
       </button>
       <div className={styles.circle}>
+        <img src={bossImage} alt="boss" />
         {barsRotation.map((degree, i) => (
           <div
             className={styles.rotateContainer}

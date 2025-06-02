@@ -10,11 +10,13 @@ const App = () => {
   const [activeBar, setActiveBar] = useState(
     Array(initRotations.length).fill(false)
   );
+  const [clickedDegree, setClickedDegree] = useState(null);
 
   const reset = () => {
     setActiveBar([]);
     setIsRotated(false);
     setBarsRotation(initRotations);
+    setClickedDegree(null);
   };
 
   const handleBarOnClick = (i) => {
@@ -29,6 +31,7 @@ const App = () => {
     const newRotations = barsRotation.map((deg) => deg + degree);
     setBarsRotation(newRotations);
     setIsRotated(true);
+    setClickedDegree(degree);
   };
 
   return (
@@ -56,6 +59,7 @@ const App = () => {
             key={degree}
             disabled={isRotated}
             onClick={() => handleRotationOnClick(degree)}
+            className={clickedDegree === degree ? styles.activeButton : ""}
           >
             {degree}
           </button>

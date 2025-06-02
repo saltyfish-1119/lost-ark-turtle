@@ -25,7 +25,7 @@ button {
   font-size: 50px;
 }
 .circle {
-  width: 200px;
+  width: 150px;
   aspect-ratio: 1;
   border: 4px solid #333;
   border-radius: 50%;
@@ -38,8 +38,8 @@ button {
 }
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   position: absolute;
   overflow: hidden;
   border-radius: 50%;
@@ -63,7 +63,7 @@ img {
   height: 200px;
   background: gray;
   border: 4px solid #000;
-  bottom: 100%;
+  bottom: 120%;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 2px;

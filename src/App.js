@@ -67,6 +67,9 @@ const App = () => {
           </button>
         ))}
       </div>
+      <div className={styles.footer}>
+        By 鹹魚
+      </div>
     </div>
   );
 };
